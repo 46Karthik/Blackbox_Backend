@@ -12,6 +12,7 @@ urlpatterns = [
     #file upload end point
     path('fileUpload/', fileupload.upload, name='filesupload'),
     #All file 
-     path('filestore/', filestore.filestore, name='filestore'),
+    path('filestore/', filestore.filestore, name='filestore'),
+    path('filestore/<int:id>/', filestore.filestore, name='filestore'),
     
 ]
